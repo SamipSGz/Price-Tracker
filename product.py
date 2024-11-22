@@ -14,7 +14,6 @@ import json
 
 
 load_dotenv()
-
 app = FastAPI()
 
 app.add_middleware(
