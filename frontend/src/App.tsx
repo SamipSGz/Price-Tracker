@@ -4,11 +4,7 @@ import PriceTrackerForm from './components/PriceTrackerForm';
 import ProductCard from './components/ProductCard';
 
 interface ProductDetails {
-  title: string;
-  currentPrice: string;
-  originalPrice: string;
-  lastChecked: string;
-  imageUrl: string;
+  output: string
 }
 
 function App() {
@@ -17,18 +13,34 @@ function App() {
 
   const handleSubmit = async (data: { url: string; title: string }) => {
     setLoading(true);
-    // Simulating API call - replace with actual backend integration
-    setTimeout(() => {
-      setProductDetails({
-        title: data.title || "Sample Product",
-        currentPrice: "$999.99",
-        originalPrice: "$1,299.99",
-        lastChecked: new Date().toLocaleString(),
-        imageUrl: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+    setProductDetails(null);
+  
+    try {
+      const response = await fetch("http://localhost:8000/scrape", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
+  
+      if (!response.ok) {
+        throw new Error("Failed to fetch product details.");
+      }
+  
+      let result = await response.text();
+      result = result.substring(1, result.length - 1);
+      setProductDetails({output:result}); // Set the raw response as the product details
+    } catch (error) {
+      console.error(error);
+      alert("Error fetching product details. Please try again.");
+    } finally {
       setLoading(false);
-    }, 1500);
+    }
   };
+  
+
+  // Format the product details
+  
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100">
