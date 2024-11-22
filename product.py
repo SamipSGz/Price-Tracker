@@ -71,16 +71,166 @@ async def scrape_product(request: ScrapeRequest):
                     , concise, and visually appealing, using bullet points or subheadings where necessary. Tailor the tone to emphasize the product's
                     strengths and practicality, while providing a brief note for additional details or disclaimers.  The output should be in the format:
 
-                    Performance:
-                        The product performance details here.
-                    Design:
-                        The product Design details here.
-                    Key Features:
-                        The product key features details here.
-                    Compatibility:
-                        The product Compatibility details here.
-                    Price:
-                        The product Price details here.	
+                    For Technology Products:
+Technical Specifications:
+    • Processor/Performance details
+    • Memory/Storage
+    • Display specifications
+    • Battery life
+    • Operating system
+
+Physical Attributes:
+    • Dimensions & weight
+    • Build materials
+    • Color options
+    • Port configuration
+
+Core Features:
+    • Key functionalities
+    • Special technologies
+    • Performance capabilities
+    • Security features
+
+Connectivity & Compatibility:
+    • Wireless capabilities
+    • Device compatibility
+    • Supported formats/standards
+    • Integration options
+
+Package Contents:
+    • What's in the box
+    • Included accessories
+    • Optional add-ons
+
+Support & Warranty:
+    • Warranty duration
+    • Technical support
+    • Software updates
+    • Service options
+
+For Clothing:
+Material & Care:
+    • Fabric composition
+    • Care instructions
+    • Washing guidelines
+    • Material properties
+
+Fit & Sizing:
+    • Size chart
+    • Fit type (Regular/Slim/Loose)
+    • Body measurements
+    • Model's size reference
+
+Design Details:
+    • Style features
+    • Color/pattern description
+    • Closure type
+    • Special embellishments
+
+Comfort & Functionality:
+    • Comfort features
+    • Season suitability
+    • Activity recommendations
+    • Special technologies (if any)
+
+Quality Assurance:
+    • Manufacturing standards
+    • Quality certifications
+    • Color fastness
+    • Durability features
+
+For Jewelry:
+Material Specifications:
+    • Metal type/purity
+    • Gemstone details
+    • Certification information
+    • Weight specifications
+
+Design Elements:
+    • Style description
+    • Setting type
+    • Design inspiration
+    • Craftsmanship details
+
+Dimensions:
+    • Size measurements
+    • Chain length (if applicable)
+    • Width/thickness
+    • Adjustability options
+
+Care & Maintenance:
+    • Cleaning instructions
+    • Storage recommendations
+    • Maintenance tips
+    • Warranty information
+
+Authentication:
+    • Hallmark details
+    • Authenticity certificate
+    • Quality assurance
+    • Origin information
+
+For Furniture:
+Construction Details:
+    • Materials used
+    • Build quality
+    • Assembly requirements
+    • Weight capacity
+
+Dimensions:
+    • Product dimensions
+    • Recommended room size
+    • Package dimensions
+    • Weight information
+
+Design & Aesthetics:
+    • Style description
+    • Color options
+    • Finish details
+    • Design features
+
+Functionality:
+    • Usage scenarios
+    • Storage capacity
+    • Special features
+    • Ergonomic benefits
+
+Maintenance:
+    • Care instructions
+    • Cleaning guidelines
+    • Durability factors
+    • Warranty coverage
+
+For Home Appliances:
+Performance Specifications:
+    • Power consumption
+    • Capacity
+    • Energy efficiency rating
+    • Operating modes
+
+Technical Features:
+    • Control system
+    • Program options
+    • Smart capabilities
+    • Special functions
+
+Installation Requirements:
+    • Space requirements
+    • Electrical specifications
+    • Plumbing needs (if applicable)
+    • Ventilation requirements
+
+Convenience Features:
+    • Ease of use
+    • Safety features
+    • Noise levels
+    • Additional functions
+
+Support & Maintenance:
+    • Warranty terms
+    • Service network
+    • Spare parts availability
+    • Maintenance schedule
                     """
             ),
                 
